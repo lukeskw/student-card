@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import StudentCard from './pages/StudentCard'
 import Validation from './pages/Validation'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<StudentCard />} />
         <Route path="/validation" element={<Validation />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
