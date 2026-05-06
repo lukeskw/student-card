@@ -2,7 +2,7 @@ export default function StudentCard() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start px-4 py-10 bg-[rgb(47,5,73)]">
       <img
-        src="/clube_do_estudante_logo.png"
+        src={`${import.meta.env.BASE_URL}clube_do_estudante_logo.png`}
         alt="Clube do Estudante"
         className="w-48 mb-10"
       />
@@ -16,7 +16,7 @@ export default function StudentCard() {
             <p className="text-[9px] leading-tight">Sociedade<br />Nacional dos<br />Estudantes</p>
           </div>
           <img
-            src="/clube_do_estudante_white_logo.png"
+            src={`${import.meta.env.BASE_URL}clube_do_estudante_white_logo.png`}
             alt="Clube do Estudante"
             className="w-28"
           />
@@ -26,7 +26,7 @@ export default function StudentCard() {
         <div className="flex justify-center items-center w-full gap-12">
           <div className="w-8"></div>
           <img
-            src="/student_image.jpg"
+            src={`${import.meta.env.BASE_URL}student_image.jpg`}
             alt="Foto do estudante"
             className="w-28 h-36 object-cover rounded shrink-0"
           />
@@ -57,7 +57,7 @@ export default function StudentCard() {
         <h2 className="text-white text-2xl mb-4 text-center">QRCode de validação:</h2>
         <div className="bg-[rgb(30,20,45)] rounded-2xl p-6 flex items-center justify-center">
           <img
-            src="/qr_code.png"
+            src={`${import.meta.env.BASE_URL}qr_code.png`}
             alt="QR Code de validação"
             className="w-72 h-72 object-contain"
           />
